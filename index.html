@@ -18,8 +18,9 @@
         var hls = new Hls({
           debug: true,
         });
-        hls.loadSource('https://kx33d.5porcated.online/_v1/12a3c521fa105800ed8c394685aeeb0b932ef95c01e4beec4b0c7baea93ece832257df1a4b6125fcfa38c35da05dee86aad28d46d73fc4e9d4e5a6385076f4d7749544f8594aed0a12c3f6ab6b4722146665/h/list,65237839.m3u8#.mp4');
-        hls.attachMedia(video);
+        //hls.loadSource('https://kx33d.5porcated.online/_v1/12a3c521fa105800ed8c394685aeeb0b932ef95c01e4beec4b0c7baea93ece832257df1a4b6125fcfa38c35da05dee86aad28d46d73fc4e9d4e5a6385076f4d7749544f8594aed0a12c3f6ab6b4722146665/h/list,65237839.m3u8#.mp4');
+        hls.loadSource('https://kx33d.5porcated.online/_v1/12a3c521fa105800ed8c394685aeeb0b932ef95c01e4beec4b0c7baea93ece832257df1a4b6125fcfa38c35da05dee86aad28d46d73fc4e9d4e5a6385076f4d7749544f8594aed0a12c3f6ab6b4722146665/h/list,65237839.m3u8');
+          hls.attachMedia(video);
         hls.on(Hls.Events.MEDIA_ATTACHED, function () {
           video.muted = true;
           video.play();
